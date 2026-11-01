@@ -1,3 +1,94 @@
 /*Racheal Herrera
 11 Oct 2026
 styles.css */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(217, 194, 210);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+
+}
+
+nav a:focus-visible {
+    outline: 3px solid rgb(214, 28, 121);
+    outline-offset: 3px;
+}
+
+nav a:hover {
+    color: rgb(231, 66, 206);
+}
+
+body {
+    background-color: #FFE9F3;
+}
+
+#hero {
+    background-image: url(images/flowers.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(214, 111, 214, 0.637);
+    padding: 4rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+#watch-caption {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 5px;
+    width: min-content;
+    background-color: rgb(217, 194, 210);
+    place-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 3px black solid;
+}
+
+footer {
+    padding: 3px;
+    background-color: rgb(217, 194, 210);
+}
+
+a {
+    color: black;
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    #music {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
